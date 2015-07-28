@@ -22,6 +22,8 @@
    cc = commit -a --amend -n
    cp = cherry-pick
    co = checkout
+   lol = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+   p = commit -p
 [color]
    ui = auto
    interactive = auto
