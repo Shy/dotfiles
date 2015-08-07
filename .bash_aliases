@@ -2,7 +2,7 @@
 alias php.ini="vim /usr/local/etc/php/5.4/php.ini"
 alias vhosts.conf="sudo vim /etc/apache2/extra/httpd-vhosts.conf"
 alias httpd.conf="sudo vim /etc/apache2/httpd.conf"
-alias henshin='python -m HTTPServer'
+alias henshin='python -m SimpleHTTPServer'
 
 
 # enable color support of ls and also add handy aliases
