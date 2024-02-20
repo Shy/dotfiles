@@ -11,6 +11,10 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# Docker with Colima - https://github.com/abiosoft/colima/blob/main/docs/FAQ.md
+export DOCKER_HOST="unix://${HOME}/.colima/default/docker.sock"
+
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -74,6 +78,8 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # https://github.com/sharat87/pip-app
 source .pip-app/pip-app.sh
+export PATH=$HOME/development/flutter/bin:$PATH
+
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -82,8 +88,8 @@ source .pip-app/pip-app.sh
 # Add wisely, as too many plugins slow down shell startup.
 
 # https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh
-plugins=(git 1password zsh-syntax-highlighting colored-man python github
- osx brew screen sudo pip)
+plugins=(git 1password zsh-syntax-highlighting colored-man-pages python github
+  brew screen sudo pip tumult zsh-apple-touchbar)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
